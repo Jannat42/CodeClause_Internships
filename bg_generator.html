@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Generator</title>
+<link rel="stylesheet" href="bg_generator.css">
+</head>
+<body>
+  <h1>Background Generator</h1>
+<div class="container">
+  <div id="colorPickers">
+    <div class="color-picker">
+      <label>Color 1:</label>
+      <input type="color" class="colorInput">
+    </div>
+  </div>
+  <button id="addColor">Add Color</button>
+  <div class="gradient-type-selector">
+    <label>Gradient Type:</label>
+    <select id="gradientType">
+      <option value="linear-gradient">Linear Gradient</option>
+      <option value="radial-gradient">Radial Gradient</option>
+      <option value="conic-gradient">Conic Gradient</option>
+      <option value="repeating-linear-gradient">Repeating Linear Gradient</option>
+      <option value="repeating-radial-gradient">Repeating Radial Gradient</option>
+      <option value="repeating-conic-gradient">Repeating Conic Gradient</option>
+      <option value="diagonal-gradient">Diagonal Gradient</option>
+      <option value="angular-gradient">Angular Gradient</option>
+    </select>
+  </div>
+  <div class="background-preview" id="backgroundPreview">
+    <p>Preview</p>
+  </div>
+</div>
+
+<script src="bg_generator.js"></script>
+</body>
+</html>
